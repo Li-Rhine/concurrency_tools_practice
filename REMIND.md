@@ -32,3 +32,17 @@ CPU密集型（加密、计算Hash等）：最佳线程数为CPU核心的1-2倍
     
 beforeExecute
     线程池中每个线程执行前会调用的方法
+    
+线程池实现原理、源码分析
+    线程池的组成部分
+        1、线程池管理器
+        2、工作线程
+        3、任务队列
+        4、任务接口(Task)
+        
+线程池状态5种
+    RUNNING: 
+    SHUTDOWN:
+    STOP:
+    TIDYING:
+    TERMINATED:
