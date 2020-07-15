@@ -14,3 +14,11 @@ CPU密集型（加密、计算Hash等）：最佳线程数为CPU核心的1-2倍
 耗时IO型：一般大于CPU核心很多倍
 
 线程数 = CPU核心数*(1+ 平均等待时间 / 平均工作时间)
+
+
+停止线程池：
+    1、shutdown 只是初始化状态，执行完存量任务再停，以后再提交任务会拒绝
+    2、isShutDown boolean
+    3、isTerminated boolean返回所有任务是否真的已经全部结束了
+    4、awaitTermination boolean 等一段时间，检测线程是否停止
+    5、shutDownNow 
