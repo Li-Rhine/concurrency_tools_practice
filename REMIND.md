@@ -22,3 +22,13 @@ CPU密集型（加密、计算Hash等）：最佳线程数为CPU核心的1-2倍
     3、isTerminated boolean返回所有任务是否真的已经全部结束了
     4、awaitTermination boolean 等一段时间，检测线程是否停止
     5、shutDownNow 
+    
+    
+4种拒绝策略
+    AbortPolicy
+    DiscardPolicy
+    DiscardOldestPolicy
+    CallerRunsPolicy 主线程提交就让主线程执行
+    
+beforeExecute
+    线程池中每个线程执行前会调用的方法

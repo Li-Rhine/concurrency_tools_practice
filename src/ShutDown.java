@@ -13,8 +13,12 @@ public class ShutDown {
         }
         Thread.sleep(1500);
 
+        executorService.shutdown();
+        executorService.execute(new ShutDownTask());
+
+
         // 队列中未执行的返回
-        List<Runnable> runnableList = executorService.shutdownNow();
+//        List<Runnable> runnableList = executorService.shutdownNow();
 
 
 
