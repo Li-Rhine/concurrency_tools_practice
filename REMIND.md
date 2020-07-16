@@ -50,5 +50,7 @@ beforeExecute
     
     
 ThreadLocal两大使用场景
-    每个线程需要一个独享的对象（通常是工具类SimpleDateFormat、Random）
-    每个线程内需要保存全局的变量,避免参数传递的麻烦
+    1、每个线程需要一个独享的对象（通常是工具类SimpleDateFormat、Random）
+        多个线程共用一个SimpleDateFormat，出现线程安全问题
+    2、每个线程内需要保存全局的变量,避免参数传递的麻烦
+    
