@@ -64,3 +64,6 @@ ThreadLocal的好处
     2、不需要加锁，提高执行效率
     3、高效利用内存， 节省开销
     4、免去传参的繁琐
+    
+每个Thread有一个ThreadLocalMap成员变量, 一对一
+ThreadLocalMap 对应多个ThreadLocal, 一对多
