@@ -46,3 +46,9 @@ beforeExecute
     STOP:
     TIDYING:
     TERMINATED:
+    
+    
+    
+ThreadLocal两大使用场景
+    每个线程需要一个独享的对象（通常是工具类SimpleDateFormat、Random）
+    每个线程内需要保存全局的变量,避免参数传递的麻烦
