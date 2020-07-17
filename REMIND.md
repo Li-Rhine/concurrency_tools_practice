@@ -67,3 +67,9 @@ ThreadLocal的好处
     
 每个Thread有一个ThreadLocalMap成员变量, 一对一
 ThreadLocalMap 对应多个ThreadLocal, 一对多
+
+ThreadLocal主要方法
+    initialValue()
+    set()
+    get()
+    remove()
