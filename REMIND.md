@@ -73,3 +73,11 @@ ThreadLocal主要方法
     set()
     get()
     remove()
+    
+ThreadLocal注意点：
+    1、内存泄漏
+    弱应用，不被强引用会被回收。ThreadLocal对key的弱应用，但是对value是强引用。阿里规约：调用remove()方法
+    2、空指针异常
+    包装类的使用，注意拆装箱
+    3、共享对象
+    对象是static,对个线程共享的，依然存在多线程问题
