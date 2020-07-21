@@ -4,7 +4,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @Description： Lock不会向synchronized， 异常的时候自动释放锁，所以最佳实践是，
+ * @Description： Lock不会像synchronized一样， 异常的时候自动释放锁，所以最佳实践是，
  *                  finally中释放锁，以便保证发生异常的时候锁一定被释放
  * @Author： Rhine
  * @Date： 2020/7/20 23:25

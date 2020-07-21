@@ -84,3 +84,6 @@ ThreadLocal注意点：
     
     
 使用Lock必须手动解锁
+    lock()、
+    tryLock()带参不带参、
+    lockInterruptibly()方法--相当于无限期的tryLock()方法
