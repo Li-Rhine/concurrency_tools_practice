@@ -87,3 +87,6 @@ ThreadLocal注意点：
     lock()、
     tryLock()带参不带参、
     lockInterruptibly()方法--相当于无限期的tryLock()方法
+    
+互斥同步锁和非互斥同步锁
+    悲观锁：synchronize和lock
