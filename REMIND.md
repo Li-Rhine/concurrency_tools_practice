@@ -89,4 +89,6 @@ ThreadLocal注意点：
     lockInterruptibly()方法--相当于无限期的tryLock()方法
     
 互斥同步锁和非互斥同步锁
-    悲观锁：synchronize和lock
+    悲观锁：synchronize和lock 、数据库select for update
+    乐观锁：原子类、并发容器、Git、数据库lock_version
+    
