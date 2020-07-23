@@ -92,3 +92,6 @@ ThreadLocal注意点：
     悲观锁：synchronize和lock 、数据库select for update
     乐观锁：原子类、并发容器、Git、数据库lock_version
     
+可重入锁
+    好处：避免死锁、提高了封装性
+    
