@@ -103,4 +103,6 @@ tryLock() 有特权，不遵循公平锁
     
     
 共享锁和排他锁
+    读写锁：要么多读、要么一写，并且不会并存
     
+ReentrantReadWriteLock 插队策略
