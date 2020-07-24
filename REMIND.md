@@ -108,3 +108,9 @@ tryLock() 有特权，不遵循公平锁
 ReentrantReadWriteLock 插队策略
     非公平锁，读的时候看队列头结点是不是写，不是写就插队，不是写就排队
     公平锁 看排队的顺序，如果是读就共享，中间如果有写，后面的读全部排队
+    
+ReentrantReadWriteLock锁的升级和降级
+    支持锁的降级，不支持升级
+    升级容易造成死锁
+    
+   适用场景： ReentrantLock适用于一般场合，ReentrantReadWriteLock适用于读多写少的情况，合理使用可以提高并发效率
