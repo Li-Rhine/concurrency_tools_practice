@@ -121,3 +121,17 @@ ReentrantReadWriteLock锁的升级和降级
 可中断锁和不可中断锁
     synchronized不可中断
     tryLock、lockInterruptibly()可以中断
+    
+JVM锁优化
+    自旋锁和自适应
+    锁消除
+    锁粗化
+   
+   注意点：
+   缩小同步代码块
+   尽量不要锁住方法
+   减少锁的次数
+   避免制造热点
+   锁中尽量不要再包含锁
+   选择合适的锁类型或合适的工具类
+   
