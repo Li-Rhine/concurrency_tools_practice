@@ -114,3 +114,6 @@ ReentrantReadWriteLock锁的升级和降级
     升级容易造成死锁
     
    适用场景： ReentrantLock适用于一般场合，ReentrantReadWriteLock适用于读多写少的情况，合理使用可以提高并发效率
+   
+自旋锁和阻塞锁
+    原子包里的工具类基本都是自旋实现
