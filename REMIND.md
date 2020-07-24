@@ -117,3 +117,7 @@ ReentrantReadWriteLock锁的升级和降级
    
 自旋锁和阻塞锁
     原子包里的工具类基本都是自旋实现
+    
+可中断锁和不可中断锁
+    synchronized不可中断
+    tryLock、lockInterruptibly()可以中断
