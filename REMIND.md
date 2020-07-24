@@ -137,3 +137,8 @@ JVM锁优化
    
    
 通常情况下，原子类的效率比锁更高（高度竞争情况下除外） CAS技术
+
+把普通的变量升级为具有原子功能的变量 偶尔需要一个原子 get-set 操作
+    AtomicIntegerFieldUpdater
+    
+    
