@@ -140,5 +140,6 @@ JVM锁优化
 
 把普通的变量升级为具有原子功能的变量 偶尔需要一个原子 get-set 操作
     AtomicIntegerFieldUpdater
+    不支持static修饰
     
     
