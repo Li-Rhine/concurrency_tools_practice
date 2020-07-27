@@ -143,3 +143,13 @@ JVM锁优化
     不支持static修饰
     
     
+CAS 应用场景
+    乐观锁
+    并发容器
+    原子类
+    
+   CAS底层原理 Unsafe类-Volite- getAndAddInt方法
+   
+CAS缺点
+    ABA问题 - 版本号的问题
+    自旋时间过长带来性能消耗
