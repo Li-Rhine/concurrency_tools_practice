@@ -156,3 +156,14 @@ CAS缺点
     
 final修饰的变量不能修改
 final修饰的对象引用不能改变，但是内容可以改变
+
+final修饰的3种变量：
+    类中的final属性
+    类中的static final属性
+    方法中的final变量
+    
+final不允许修复构造方法
+不可被重写，也就是不能被override    引申：static方法也不能被重写，但是可以有一个同名的方法，和各自的类绑定
+
+final修饰类
+    不可被继承 String就是final,因为不可以继承
