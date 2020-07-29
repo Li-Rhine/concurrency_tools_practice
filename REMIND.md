@@ -179,3 +179,5 @@ ConcurrentHashMap 和 CopyOnWriteArrayList 性能优化，取代之前的并发�
     同时put碰撞导致数据丢失
     同时put扩容导致数据丢失
     死循环造成CPU 100%  存在于JDK7及以前的版本（HashMap在高并发的情况下死循环）--多个线程同时扩容的时候，形成了环形链表，导致了死循环
+    
+   1.7 Hash碰撞 拉链法  1.8 红黑树
