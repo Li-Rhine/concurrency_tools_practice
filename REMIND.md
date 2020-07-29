@@ -170,3 +170,12 @@ final修饰类
     
     
 把变量写在线程内部 - 栈封闭
+
+
+Vector(List)、Hashtable(Map)都是线程安全的，都是直接加上synchronized防止并发，并发性能差
+ConcurrentHashMap 和 CopyOnWriteArrayList 性能优化，取代之前的并发容器
+
+为什么HashMap是线程不安全的？
+    同时put碰撞导致数据丢失
+    同时put扩容导致数据丢失
+    死循环造成CPU 100%  存在于JDK7及以前的版本（HashMap在高并发的情况下死循环）--多个线程同时扩容的时候，形成了环形链表，导致了死循环
