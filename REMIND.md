@@ -197,3 +197,14 @@ CopyOnWriteArrayList读写规则
        只有写写才会互斥
        创建新副本，读写分离
        
+阻塞队列
+    ArrayBlockingQueue 
+    LinkedBlockingQueue 无界 Integer的最大值
+    PriorityBlockQueue- 支持优先级
+    SynchronousQueue- 容量为0，直接交换，效率很高
+    
+   主要方法
+        put、take  -会阻塞
+        add、remove、element - 会抛异常
+        offer、poll、peek - 会有返回值
+       
