@@ -190,3 +190,10 @@ ConcurrentHashMap
    Hash碰撞 1.8 链表+红黑树
    1.7 分段锁 1.8 CAS+synchronized 链表长度超过8时转化为红黑树 红黑树占据的空间是链表的两倍，占据空间
    链表 O(n) 红黑树 O(lgn)
+   
+   
+CopyOnWriteArrayList 读需要尽可能的快，而写慢一些没有太大关系（黑名单，每日更新）
+CopyOnWriteArrayList读写规则
+       只有写写才会互斥
+       创建新副本，读写分离
+       
