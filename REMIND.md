@@ -181,3 +181,12 @@ ConcurrentHashMap 和 CopyOnWriteArrayList 性能优化，取代之前的并发�
     死循环造成CPU 100%  存在于JDK7及以前的版本（HashMap在高并发的情况下死循环）--多个线程同时扩容的时候，形成了环形链表，导致了死循环
     
    1.7 Hash碰撞 拉链法  1.8 红黑树
+   
+   
+ConcurrentHashMap
+    1.7 默认16个Segments,每个segment有独立的ReentrantLock,互不影响，提高并发的效率
+    1.8 node CAS + synchronized
+    
+   Hash碰撞 1.8 链表+红黑树
+   1.7 分段锁 1.8 CAS+synchronized 链表长度超过8时转化为红黑树 红黑树占据的空间是链表的两倍，占据空间
+   链表 O(n) 红黑树 O(lgn)
