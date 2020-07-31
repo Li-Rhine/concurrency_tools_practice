@@ -215,3 +215,6 @@ CopyOnWriteArrayList读写规则
     Condition接口（又称条件对象）
     CyclicBarrier 循环栅栏
        
+   Condition里面的await()会自动释放Lock锁，和Object.wait一样，不需要自己手动释放锁
+   调用await的时候，必须持有锁，否则会抛出异常，和Object.wait一样
+    
