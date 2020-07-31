@@ -207,4 +207,11 @@ CopyOnWriteArrayList读写规则
         put、take  -会阻塞
         add、remove、element - 会抛异常
         offer、poll、peek - 会有返回值
+        
+        
+控制并发流程
+    CountDownLatch 倒计时门闩
+    Semaphore 信号量
+    Condition接口（又称条件对象）
+    CyclicBarrier 循环栅栏
        
