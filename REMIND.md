@@ -217,4 +217,10 @@ CopyOnWriteArrayList读写规则
        
    Condition里面的await()会自动释放Lock锁，和Object.wait一样，不需要自己手动释放锁
    调用await的时候，必须持有锁，否则会抛出异常，和Object.wait一样
+   
+   
+AQS:
+    state
+    控制线程抢锁和配合的FIFO队列
+    期望协作工具类去实现获取/释放等重要方法
     
