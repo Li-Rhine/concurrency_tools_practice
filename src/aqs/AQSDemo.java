@@ -6,8 +6,8 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class AQSDemo {
     public static void main(String[] args) {
-        new Semaphore();
-        new CountDownLatch();
-        new ReentrantLock();
+//        new Semaphore();
+//        new CountDownLatch();
+//        new ReentrantLock();
     }
 }
