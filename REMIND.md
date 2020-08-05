@@ -248,3 +248,12 @@ Future的get()方法获取结果5种情况：
     4、任务被取消 --get会抛出CancellationException
     5、任务超时 --get方法有一个重载方法，传入一个延迟时间，如果时间到了还没有获得结果，get方法就会抛出TimeoutException
     
+    
+Cancel方法：取消任务的执行
+    1、还没开始，cancel返回true
+    2、已完成或者已取消，cancel返回false
+    3、已经开始执行了，根据填入的参数
+    
+   Future.cancel(true)
+    
+    
