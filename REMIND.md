@@ -236,7 +236,7 @@ Future对象的获取
 Future的5种常用方法
     get
     get带时间参数
-    Cancel 取消
+    Cancel 取消  false：取消任务，不中断子线程  true:取消任务，中断子线程
     isDone() 判断线程是否执行完毕
     isCancelled 判断是否被取消
 
