@@ -255,5 +255,10 @@ Cancel方法：取消任务的执行
     3、已经开始执行了，根据填入的参数
     
    Future.cancel(true)
+   
+批量获取Futrue的结果可能导致阻塞
+    timeout
+    CompleteFuture解决
+Future生命周期不能后退
     
     
