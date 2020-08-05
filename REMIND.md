@@ -224,3 +224,27 @@ AQS:
     控制线程抢锁和配合的FIFO队列
     期望协作工具类去实现获取/释放等重要方法
     
+    
+Runnable的缺陷：
+    不能返回值
+    不能抛出checked Exception
+    
+Future对象的获取
+    线程池submit返回
+    FutureTask返回
+    
+Future的5种常用方法
+    get
+    get带时间参数
+    Cancel 取消
+    isDone() 判断线程是否执行完毕
+    isCancelled 判断是否被取消
+
+    
+Future的get()方法获取结果5种情况：
+    1、任务正常完成 --get方法会立刻返回结果
+    2、任务尚未完成 --get将阻塞并直到任务完成
+    3、任务执行过程抛出异常 --get会抛出ExecuteException
+    4、任务被取消 --get会抛出CancellationException
+    5、任务超时 --get方法有一个重载方法，传入一个延迟时间，如果时间到了还没有获得结果，get方法就会抛出TimeoutException
+    
